@@ -1,5 +1,5 @@
 #include <iostream>
-#include "codigo_negociacao.hpp"
+#include "../headers/codigo_negociacao.hpp"
 using namespace std;
 
 bool Codigo_negociacao::validar(std::string codigo_negociacao){

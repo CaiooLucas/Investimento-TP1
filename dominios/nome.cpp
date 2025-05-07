@@ -1,21 +1,21 @@
 #include <iostream>
-#include "nome.hpp"
+#include "../headers/nome.hpp"
 using namespace std;
 
 bool Nome::validar(std::string nome){
 
     if(nome.length() > 20){
-        return false; // verificação do tamanho
+        return false; // verificaï¿½ï¿½o do tamanho
     }
     char ultimo_caracter;
     for(char i : nome){
-        if (ultimo_caracter == ' ' && i == ' '){// comparação entre o char atual e o ultimo para verificar espaços em brancos em sequencia.
+        if (ultimo_caracter == ' ' && i == ' '){// comparaï¿½ï¿½o entre o char atual e o ultimo para verificar espaï¿½os em brancos em sequencia.
             return false;
             }
-        if(!(i >= '0' && i <= '9')){ // verifica se não é número
-            if(!(i >= 'a' && i <= 'z')){ // verifica se não é letra minuscula
-                if (!(i >= 'A' && i <= 'Z')){ // vefica se não é letra maiuscula
-                    if(!(i ==' ')){        // verifica se não é espaço em branco
+        if(!(i >= '0' && i <= '9')){ // verifica se nï¿½o ï¿½ nï¿½mero
+            if(!(i >= 'a' && i <= 'z')){ // verifica se nï¿½o ï¿½ letra minuscula
+                if (!(i >= 'A' && i <= 'Z')){ // vefica se nï¿½o ï¿½ letra maiuscula
+                    if(!(i ==' ')){        // verifica se nï¿½o ï¿½ espaï¿½o em branco
                             return false;
                         }
                     }
